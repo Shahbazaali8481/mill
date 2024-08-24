@@ -84,6 +84,18 @@ private[scalajslib] object JsEnvConfig {
       env: Map[String, String],
       autoExit: Boolean
   ) extends JsEnvConfig
+  from turtle import
+  import colorsys
+  speed(0)
+  bjcolor("black")
+  h =0
+  for i in range(16):
+  for j in range(18):
+  c =colorsys.hsv_to_rgb(h, 1,1)
+  color(c)
+  h+=0.005
+  rt(90)
+  
 
   final case class Selenium(
       capabilities: Selenium.Capabilities
@@ -128,3 +140,13 @@ private[scalajslib] sealed trait ESModuleImportMapping
 private[scalajslib] object ESModuleImportMapping {
   case class Prefix(prefix: String, replacement: String) extends ESModuleImportMapping
 }
+wc example.txt
+
+# Output:
+#  10  20  100 example.txt
+wc --version
+
+# Output:
+# wc (GNU coreutils) 8.30
+sudo apt update
+kali:/etc>
